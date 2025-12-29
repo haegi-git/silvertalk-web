@@ -1,15 +1,17 @@
 import { Outlet } from 'react-router';
+import RightSide from './components/RightSide';
+import Header from './components/Header'
 
 export default function RootLayout() {
   return (
-    <div>
-      <header>
-        <h1>온라인 경로당</h1>
-      </header>
-
-      <div>
+    <div className="min-h-screen flex flex-col">
+      <Header/>
+      <main className="flex-1 grid grid-cols-[1fr_280px]">
         <Outlet />
-      </div>
+        <RightSide/>
+      </main>
+
+      
 
       <footer>
         <h1>푸터 테스트</h1>
