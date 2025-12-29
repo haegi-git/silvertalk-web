@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router';
-import RightSide from './components/RightSide';
-import Header from './components/Header'
+import RightSide from './components/Layout/RightSide';
+import Header from './components/Layout/Header'
+import Footer from './components/Layout/Footer';
 
 export default function RootLayout() {
   return (
@@ -13,9 +14,7 @@ export default function RootLayout() {
 
       
 
-      <footer>
-        <h1>푸터 테스트</h1>
-      </footer>
+      <Footer/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export default function RightSide(){
     return(
-        <aside className="border-l">
+        <aside className="border-l border-gray-300">
             
             <div className="flex flex-col border-b">
                 <p className="text-xs text-center mb-2">안녕하세요.<br/> 매너 있는 환경에 동참해주세요.</p>
