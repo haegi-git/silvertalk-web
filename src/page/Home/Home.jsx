@@ -1,6 +1,8 @@
+import { app } from "../../api/firebase";
 import HomeBanner from "./HomeBanner"
 
 export default function Home() {
+  console.log("Firebase app:", app);
   return (
     <div>
 
